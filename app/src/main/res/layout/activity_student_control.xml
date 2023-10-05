@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentControlActivity">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name:"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        android:layout_marginStart="5dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/text_code"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/courseid"
+        android:gravity="center"
+        android:hint="Attend Code"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Activate"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toEndOf="@id/text_code"
+        app:layout_constraintTop_toTopOf="@id/text_code"
+        app:layout_constraintBottom_toBottomOf="@id/text_code"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:text="ACTIVATE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/lineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/linehorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <ImageView
+        android:id="@id/chat_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/newchat_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linehorizontal" />
+
+    <TextView
+        android:id="@id/text_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="chat"
+        app:layout_constraintTop_toBottomOf="@id/chat_image"
+        app:layout_constraintStart_toStartOf="@id/chat_image"
+        app:layout_constraintEnd_toEndOf="@id/chat_image"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/miniDescription"
+        android:textStyle="bold"
+        />
+
+
+
+    <ImageView
+        android:id="@id/image_quze"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/solve_foreground"
+        app:layout_constraintStart_toStartOf="@id/lineVertical"
+        app:layout_constraintTop_toTopOf="@id/chat_image"
+        android:layout_marginStart="30dp"
+
+        />
+    <TextView
+        android:id="@id/text_Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text=" Solve Quiz"
+        app:layout_constraintTop_toBottomOf="@id/image_quze"
+        app:layout_constraintStart_toStartOf="@id/image_quze"
+        app:layout_constraintEnd_toEndOf="@id/image_quze"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/miniDescription"
+        android:textStyle="bold"
+        />
+
+
+    <ImageView
+        android:id="@id/matrial_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/matrial_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_chat" />
+
+    <TextView
+        android:id="@id/text_matrial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Material"
+        app:layout_constraintTop_toBottomOf="@id/matrial_image"
+        app:layout_constraintStart_toStartOf="@id/matrial_image"
+        app:layout_constraintEnd_toEndOf="@id/matrial_image"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/miniDescription"
+        android:textStyle="bold"
+        />
+
+
+    <ImageView
+        android:id="@id/Grade_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/grades_foreground"
+        app:layout_constraintTop_toBottomOf="@id/text_Quiz"
+        app:layout_constraintStart_toStartOf="@id/image_quze"
+        app:layout_constraintEnd_toEndOf="@id/image_quze"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@id/text_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Grades"
+        app:layout_constraintTop_toBottomOf="@id/Grade_image"
+        app:layout_constraintStart_toStartOf="@id/Grade_image"
+        app:layout_constraintEnd_toEndOf="@id/Grade_image"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/miniDescription"
+        android:textStyle="bold"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

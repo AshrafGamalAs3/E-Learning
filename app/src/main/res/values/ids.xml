@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textstudent" type="id" />
+    <item name="textinstractor" type="id" />
+    <item name="name_view" type="id" />
+    <item name="Course" type="id" />
+    <item name="quze" type="id" />
+    <item name="project" type="id" />
+    <item name="Attand" type="id" />
+    <item name="arrowback" type="id" />
+    <item name="attand_image" type="id" />
+    <item name="text_attand" type="id" />
+    <item name="text_attand2" type="id" />
+    <item name="lineVertical" type="id" />
+    <item name="LineAttand" type="id" />
+    <item name="text_Quze" type="id" />
+    <item name="image_quze" type="id" />
+    <item name="text_Quze2" type="id" />
+    <item name="line1Vertical" type="id" />
+    <item name="matrial_image" type="id" />
+    <item name="lineAttand" type="id" />
+    <item name="text_matrial" type="id" />
+    <item name="text_matrial2" type="id" />
+    <item name="lineMatrial" type="id" />
+    <item name="line1Vertical2" type="id" />
+    <item name="lineQuze" type="id" />
+    <item name="Grade_image" type="id" />
+    <item name="text_grade" type="id" />
+    <item name="text_grade2" type="id" />
+    <item name="linegrade" type="id" />
+    <item name="line2" type="id" />
+    <item name="text_Quiz" type="id" />
+    <item name="upload" type="id" />
+    <item name="pdf_view" type="id" />
+    <item name="confirm" type="id" />
+    <item name="question" type="id" />
+    <item name="Four" type="id" />
+    <item name="linehorizontal" type="id" />
+    <item name="chat_image" type="id" />
+    <item name="text_chat" type="id" />
+    <item name="Endattendance" type="id" />
+    <item name="back" type="id" />
+    <item name="chat" type="id" />
+</resources>

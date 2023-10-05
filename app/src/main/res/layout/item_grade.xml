@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           android:layout_marginTop="3dp"
+            tools:text="Name: "
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+
+            />
+        <TextView
+            android:id="@+id/student_name_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/student_name"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="3dp"
+            tools:text="Result "
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            />
+        <TextView
+            android:id="@+id/Attand_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/student_name"
+            android:layout_marginTop="3dp"
+            tools:text="AttendGrade: "
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            />
+        <TextView
+            android:id="@+id/Attand_grade_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/Attand_grade"
+            app:layout_constraintTop_toBottomOf="@id/student_name"
+            android:layout_marginTop="3dp"
+            tools:text="AttendGrade "
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            />
+
+
+        <TextView
+            android:id="@+id/quiz_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Attand_grade"
+            android:layout_marginTop="3dp"
+            tools:text="QuizGrade: "
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            />
+        <TextView
+            android:id="@+id/quiz_grade_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/quiz_grade"
+            app:layout_constraintTop_toBottomOf="@id/Attand_grade_result"
+            android:layout_marginTop="3dp"
+            tools:text="QuizGrade "
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

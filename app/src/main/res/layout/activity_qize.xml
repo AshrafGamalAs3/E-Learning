@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QizeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="horizontal"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
+        app:startIconTint="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="question"
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/question_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="21">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/quze"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+      app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question"
+         android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="The first answer "
+
+
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/first_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/quze"
+        app:layout_constraintBottom_toBottomOf="@id/quze"
+        app:layout_constraintStart_toEndOf="@id/quze"
+        android:layout_marginBottom="14dp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/project"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quze"
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="The second answer "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/secondAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/second_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/project"
+        app:layout_constraintBottom_toBottomOf="@id/project"
+        app:layout_constraintStart_toEndOf="@id/project"
+        android:layout_marginBottom="14dp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/Attand"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/project"
+
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="The third answer "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/thirdAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/third_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Attand"
+        app:layout_constraintBottom_toBottomOf="@id/Attand"
+        app:layout_constraintStart_toEndOf="@id/Attand"
+        android:layout_marginBottom="14dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/Four"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Attand"
+
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="The third answer "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fourAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/four_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Four"
+        app:layout_constraintBottom_toBottomOf="@id/Four"
+        app:layout_constraintStart_toEndOf="@id/Four"
+        android:layout_marginBottom="14dp"
+
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:text="Next Question"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Four" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+
+        android:backgroundTint="@color/primaryTextColor"
+        android:text="Add Quiz"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:cornerRadius="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCourse">
+
+    <ImageView
+
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/hero_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/createCourse"
+        app:layout_constraintBottom_toBottomOf="@id/createCourse"
+        app:layout_constraintStart_toEndOf="@id/createCourse"
+        android:layout_marginTop="40dp"
+
+        />
+    <ImageView
+        android:id="@id/arrowback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/createCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="@id/createCourse"
+        app:layout_constraintEnd_toEndOf="@id/createCourse"
+       app:layout_constraintTop_toBottomOf="@id/createCourse"
+        android:layout_marginTop="10dp"
+    />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.30"
+        android:orientation="horizontal"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/Course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
+        app:startIconTint="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="Course Name"
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Course_Name"
+            android:maxLength="21"
+            android:inputType="textPersonName"
+                    >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/quze"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Course"
+       android:layout_marginStart="5dp"
+         android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="Quiz "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GradeQuze"
+
+            android:inputType="number"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/project"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/quze"
+        app:layout_constraintTop_toBottomOf="@id/Course"
+        android:layout_marginStart="5dp"
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="Project "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/projectGrade"
+
+            android:inputType="number"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/Attand"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/project"
+        app:layout_constraintTop_toBottomOf="@id/Course"
+        android:layout_marginStart="5dp"
+        android:textColorHint="@color/primaryTextColor"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        android:hint="Attend "
+        app:hintTextColor="@color/primaryTextColor"
+        app:boxStrokeColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AttandGrade"
+           android:inputType="number"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:text="Conferm To Create Course"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="13dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
